@@ -1,0 +1,30 @@
+<% include ../base_logged.ejs %>
+
+<div id="content-wrapper">
+    <div class="mui--appbar-height"></div>
+    <div class="mui-container-fluid">
+
+        <form method="POST"  action="/financial/new">
+            <br>
+            <div class="form-field">
+                <input type="number" name="value" value="" placeholder="Valor" />
+            </div>
+            <br>
+            <div class="form-field">
+                <input type="text" name="description" value="" placeholder="Descrição" />
+            </div>
+            <br>
+
+            <br>
+            <div class="form-buttons">
+                <button type="submit" class="button">Pronto</button>
+            </div>
+
+        </form>
+    </div>
+</div>
+
+
+
+</body>
+</html>

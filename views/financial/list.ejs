@@ -1,0 +1,30 @@
+<% include ../base_logged.ejs %>
+
+<div id="content-wrapper">
+    <div class="mui--appbar-height"></div>
+    <div class="mui-container-fluid">
+        <br>
+        <% if(list && list.length > 0){ %>
+        <div class="table">
+            <div class="table-header">
+                <div class="header__item"><a id="value" class="filter__link" href="#">Valor</a></div>
+                <div class="header__item"><a id="email" class="filter__link filter__link--number" href="#">Descrição</a></div>
+            </div>
+            <div class="table-content">
+                <% list.forEach(function (flow){ %>
+                <div class="table-row">
+                    <div class="table-data"><%- flow.value %></div>
+                    <div class="table-data"><%- flow.description %></div>
+                </div>
+                <% }); %>
+            </div>
+
+        </div>
+        <% } %>
+    </div>
+</div>
+
+
+
+</body>
+</html>
